@@ -3,88 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aldi Syahdan Maulana | Fullstack Developer</title>
+    <title>Aldi Syahdan Maulana | Fullstack Web Developer</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <nav>
     <div class="container nav-wrapper">
-        <div class="logo">ALDI<span>SYAHDAN<span>MAULANA</span></div>
+        <div class="logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L2 7L12 12L22 7L12 2Z" fill="#3b82f6"/><path d="M2 17L12 22L22 17" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 12L12 17L22 12" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Aldi Syahdan Maulana
+        </div>
         <ul>
-            <li><a href="#about">Profil</a></li>
+            <li><a href="#about" class="active">Profil</a></li>
             <li><a href="#projects">Portfolio</a></li>
             <li><a href="#skills">Keahlian</a></li>
         </ul>
+        <div class="search-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </div>
     </div>
 </nav>
 
-<header class="hero-section reveal">
-    <div class="container hero-content">
-        <h1 class="gradient-text">Building Scalable Fullstack Applications</h1>
-        <p>Spesialis SvelteKit & PostgreSQL yang fokus pada performa dan skalabilitas sistem.</p>
-        <div class="scroll-indicator"></div>
-    </div>
+<header class="hero container">
+    <h1>Building <span class="blue-text">Scalable</span><br>Fullstack Applications</h1>
+    <p class="subtitle">Membangun aplikasi web fullstack dari awal hingga deployment dengan pendekatan modern.</p>
 </header>
 
-<section id="about" class="container reveal">
-    <div class="section-header">
-        <h2>Eksplorasi Teknologi</h2>
-        <div class="line"></div>
-    </div>
-    <div class="content-text">
-        <p>Web developer dengan pengalaman membangun dan mengelola aplikasi web secara end-to-end menggunakan framework modern maupun CMS. Terbiasa mengerjakan pengembangan fullstack, mulai dari perancangan antarmuka, pengembangan backend, pengelolaan database, hingga deployment dan optimisasi performa. Fokus pada sistem yang stabil, efisien, dan siap digunakan dalam skenario nyata.</p>
-    </div>
-</section>
-
-<section id="projects" class="container reveal">
-    <div class="section-header">
-        <h2>Managed Projects</h2>
-        <div class="line"></div>
-    </div>
-    
+<section id="projects" class="container">
+    <h2 class="section-title">Managed Projects</h2>
     <div class="project-grid">
         <div class="card">
-            <div class="project-image">
+            <div class="image-box">
                 <img src="img/crevalen-screenshot.png" alt="Crevalen.xyz">
             </div>
-            <div class="project-info">
-                <span class="tag">SvelteKit & Redis</span>
+            <div class="card-content">
                 <h3>crevalen.xyz</h3>
-                <p>Website fullstack sveltekit dengan optimasi performa tinggi menggunakan Redis dan PostgreSQL.</p>
-                <a href="https://www.crevalen.xyz" target="_blank" class="btn-link">Lihat Project</a>
+                <div class="tag-meta">
+                    <span class="dot"></span> Aplikasi web yang dikembangkan menggunakan pendekatan fullstack dengan framework modern. Dibangun dari awal hingga tahap produksi, mencakup pengembangan frontend dan backend, pengelolaan database relasional, serta deployment ke lingkungan cloud. Fokus utama pada performa aplikasi, struktur kode yang maintainable, dan pengalaman pengguna yang responsif.
+                </div>
+                <a href="https://www.crevalen.xyz" target="_blank" class="btn-visit">Kunjungi Website</a>
             </div>
         </div>
 
         <div class="card">
-            <div class="project-image">
+            <div class="image-box">
                 <img src="img/jarbatnews-screenshot.png" alt="Jarbatnews">
             </div>
-            <div class="project-info">
-                <span class="tag">WordPress & PHP</span>
-                <h3>jarbatnews.com</h3>
-                <p>Manajemen teknis dan optimasi struktur website berita daerah berskala aktif.</p>
-                <a href="https://jarbatnews.com" target="_blank" class="btn-link">Lihat Project</a>
+            <div class="card-content">
+                <h3>Jarbatnews.com</h3>
+                <div class="tag-meta">
+                    <span class="dot"></span> Website berita berbasis CMS yang dikelola dan dikembangkan untuk kebutuhan publikasi konten secara berkelanjutan. Bertanggung jawab atas pengelolaan teknis website, struktur konten, dan performa halaman agar stabil dan mudah diakses pengguna.
+                </div>
+                <a href="https://jarbatnews.com" target="_blank" class="btn-visit">Kunjungi Website</a>
             </div>
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="container">
+    <h2 class="section-title">Tech Stack</h2>
+    <div class="skill-grid">
+        <div class="skill-box">
+            <h4>Development</h4>
+            <div class="line"></div>
+            <ul>
+                <li>SvelteKit,Next.js,Astro,Nuxt </li>
+                <li>TypeScript & JavaScript </li>
+                <li>Tailwind CSS </li>
+            </ul>
+        </div>
+        <div class="skill-box">
+            <h4>Backend & DB</h4>
+            <div class="line"></div>
+            <ul>
+                <li>PostgreSQL </li>
+                <li>MySQL </li>
+                <li>MariaDB </li>
+                <li>SQL Lite </li>
+                <li>Prisma ORM </li>
+                <li>Redis Caching </li>
+            </ul>
+        </div>
+        <div class="skill-box">
+            <h4>Workflow</h4>
+            <div class="line"></div>
+            <ul>
+                <li>Git & GitHub </li>
+                <li>Vercel Deployment </li>
+                <li>Web Performance </li>
+            </ul>
         </div>
     </div>
 </section>
 
 <footer>
-    <div class="container footer-content">
-        <div class="contact-icons">
-            <a href="https://wa.me/6285119042467" target="_blank">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 1 1-7.6-10.6 8.38 8.38 0 0 1 3.8.9L21 3z"></path></svg>
-            </a>
-            <a href="mailto:aldimaulana251298@gmail.com">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-            </a>
-            <a href="https://linkedin.com/in/aldisyahdan" target="_blank">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-            </a>
-        </div>
-        <p class="copyright">ALDI SYAHDAN MAULANA &copy; 2026 </p>
+    <div class="contact-icons">
+        <a href="https://wa.me/6285119042467" target="_blank">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 1 1-7.6-10.6 8.38 8.38 0 0 1 3.8.9L21 3z"></path></svg>
+        </a>
+        <a href="mailto:aldimaulana251298@gmail.com">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        </a>
+        <a href="https://linkedin.com/in/aldisyahdan" target="_blank">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+        </a>
     </div>
 </footer>
 
